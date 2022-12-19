@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Input from './components/Input'
 import Button from './components/Button'
 
