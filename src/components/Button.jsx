@@ -1,11 +1,13 @@
-const Button = () => {
-  return (
-    <form>
-      <div>
-        <button className="btn btn-dark mt-3" type="submit">Enviar</button>
-      </div>
-    </form>
-  )
-}
+import React from "react";
 
+const Button  = () => {
+  return ( 
+  <>
+    <button type="submit" className="btn btn-primary btn-sm mt-3">
+      Contraseña Correcta
+    </button>
+  </>
+  );
+}
+ 
 export default Button

@@ -1,14 +1,15 @@
-const Input = () => {
-  return (
-    <form>
-      <div className="form-group">
-        <label>Nombre</label>
-        <input className="form-control" name="Nombre" placeholder="Ingresa tu nombre" />
-        <label>Contraseña</label>
-        <input className="form-control" name="Constraseña" placeholder="Ingresa tu contraseña"/>
-      </div>
-    </form>
-    )
-  }
+import Button from "./Button";
 
-  export default Input
+const Input = ({setNombre, setContraseña}) => {
+  return (
+    <>
+      <label htmlFor="nombre">Nombre</label>
+      <input type="text" name="nombre" placeholder="Ingrese su nombre de usuario" className="form-control" onChange={(e) => setNombre(e.target.value)} />
+      
+      <label htmlFor="contraseña">Contraseña</label>
+      <input type="text" name="contraseña" placeholder="Ingrese su contraseña" className="form-control" onChange={(e) => setContraseña(e.target.value)} />
+    </>
+  );
+};
+
+export default Input
