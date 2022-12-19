@@ -19,8 +19,9 @@ function App() {
 
   return (
     <form onSubmit={handleSubmit}>
+      <h1>Desafio Estado de los componentes y eventos</h1>
       <Input setNombre={setNombre} setContraseña={setContraseña} />
-      <Button />
+      {contraseña === "252525" ? <Button /> : null}
     </form>
   );
 }
